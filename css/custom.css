@@ -1,0 +1,165 @@
+[data-bs-theme=light] body {
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif !important;
+    font-size: 13px !important;
+    background-color: #343434;
+}
+.container {
+    max-width: 955px !important;
+}
+#main-menu .dropdown-menu,
+.bg-header {
+    background: transparent !important;
+}
+.navbar-brand img {
+    max-height: 130px !important;
+}
+#primary-menu a {
+    font-size: 0.8rem;
+}
+.widget-area .widget a {
+    color: #fff;
+}
+.widget-area .widget {
+    margin-bottom: 1rem;
+    position: relative;
+    color: #fff;
+    background-color: var(--bs-primary);
+    border-radius: 5px;
+}
+.widget-area .table>:not(caption)>*>*, 
+.widget-area .widget_calendar .wp-calendar-table>:not(caption)>*>*,
+.widget-area .wp-block-table table>:not(caption)>*>*, 
+.widget-area table:not(.table)>:not(caption)>*>* {
+    padding: 0.25rem 0.25rem;
+    background-color: transparent !important;
+    color: var(--bs-light);
+}
+.widget-area h3.widget-title {
+    text-align: center;
+    color: var(--bs-light);
+    padding: 0.65rem;
+    margin: 0;
+    font-size: 21px;
+    font-family: Rockwell, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    text-transform: uppercase;
+    background-image: url('../images/blockheader.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.widget-area .widget > *:not(.widget-title):not(#searchform):not(.customize-partial-edit-shortcut) {
+    padding: 0 0.35rem;
+}
+.widget_search #searchsubmit {
+    color: var(--bs-light);
+    background-color: var(--bs-primary);
+}
+.widget_search #searchsubmit,
+.widget_search #s {
+    padding: 0.25rem;
+    font-size: .85rem;
+}
+.widget ul,
+.entry-content ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
+.widget-area .widget > ul {
+    padding-left: .35rem !important;
+}
+.widget ul > li,
+.entry-content ul > li {
+    padding-left: .7rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+.widget ul > li:before,
+.entry-content ul > li:before {
+    content: '\f111';
+    font-family: 'FontAwesome';
+    color: var(--bs-light);
+    font-size: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    display: inline-block;
+}
+.entry-content ul > li {
+    padding-left: .75rem;
+}
+.entry-content ul {
+    padding-left: 1rem !important;
+}
+.entry-content ul > li:before {
+    content: '';
+    background: rgb(8,60,119);
+    background: linear-gradient(355deg, rgba(8,60,119,1) 0%, rgba(95,172,255,1) 100%);
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 100%;
+    margin-top: 0.25rem;
+}
+.entry-header .entry-title,
+.entry-header .content-title {
+    background-color: var(--bs-primary);
+    padding: 0.35rem 0.75rem;
+    color: var(--bs-white);
+    background-image: linear-gradient(180deg, rgb(255 255 255 / 33%), rgb(255 255 255 / 31%));
+    font-size: 1.4rem !important;
+    font-weight: normal !important;
+}
+.entry-header .content-title a {
+    color: var(--bs-white);
+    font-size: 1rem;
+}
+.entry-header .content-title a:hover {
+    color: var(--bs-primary);
+}
+.widget_calendar caption {
+    color: var(--bs-light);
+    caption-side: top;
+    text-align: center;
+    padding-top: 0;
+}
+.widget_calendar #today {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #page {
+        margin: 3rem 0;
+    }
+    #primary-menu .dropdown-menu, .dropdown-item:focus,
+    .dropdown-item:hover {
+        background-color: var(--bs-primary);
+    }
+    #primary-menu .dropdown-menu > li > a {
+        color: #fff;
+    }
+    #primary-menu > li > a {
+        transition: all .5s ease;
+        position: relative;
+        color: #ffffff;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.65rem;
+        text-transform: uppercase;
+        font-family: 'Rockwell';
+    }
+    #primary-menu > li > a:hover,
+    #primary-menu > li.current-menu-item > a {
+        background-image: var(--bs-gradient);
+    }
+}
+
+@media (min-width: 1000px) {
+    .widget-area {    
+        max-width: 27% !important;
+        min-width: 27%;
+    }
+}
