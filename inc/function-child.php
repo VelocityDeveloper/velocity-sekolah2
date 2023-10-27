@@ -127,6 +127,7 @@ function velocitychild_theme_setup()
         Kirki::remove_panel('panel_antispam');
         Kirki::remove_control('custom_logo');
         Kirki::remove_control('display_header_text');
+
     endif;
 
     //remove action from Parent Theme
