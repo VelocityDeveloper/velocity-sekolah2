@@ -120,6 +120,13 @@ function velocitychild_theme_setup()
             ],
         ]);
 
+        // remove panel in customizer 
+        Kirki::remove_panel('global_panel');
+        Kirki::remove_panel('panel_header');
+        Kirki::remove_panel('panel_footer');
+        Kirki::remove_panel('panel_antispam');
+        Kirki::remove_control('custom_logo');
+        Kirki::remove_control('display_header_text');
     endif;
 
     //remove action from Parent Theme
