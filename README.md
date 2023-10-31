@@ -1,4 +1,4 @@
-Velocity Child Theme Paket f Sekolah 2
+Velocity Child Theme Paket F Sekolah 2
 =================
 [sekolah2.velocitydeveloper.com](https://www.sekolah2.velocitydeveloper.com/)
 
