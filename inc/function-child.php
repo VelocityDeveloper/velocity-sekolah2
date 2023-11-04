@@ -119,6 +119,13 @@ function velocitychild_theme_setup()
                 ]
             ],
         ]);
+        
+		// section title_tagline
+		Kirki::add_section('title_tagline', [
+			'panel'    => 'panel_sekolah',
+			'title'    => __('Site Identity', $textdomain),
+			'priority' => 10,
+		]);
 
         // remove panel in customizer 
         Kirki::remove_panel('global_panel');
