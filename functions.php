@@ -19,12 +19,13 @@
  *
  */
 
- $inc = get_stylesheet_directory() . '/inc';
- $includes = [
-	'enqueue.php',
-	'function-child.php'
- ];
+$inc = get_stylesheet_directory() . '/inc';
+$includes = [
+    'enqueue.php',
+    'function-child.php',
+    'template-overrides.php',
+];
 
- foreach( $includes as $include ) {
-	 require_once( $inc . '/' . $include );
- }
+foreach ($includes as $include) {
+    require_once $inc . '/' . $include;
+}
